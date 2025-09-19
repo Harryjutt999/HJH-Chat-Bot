@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HJH ChatBot</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <img src="https://i.postimg.cc/mgwRjfZs/res-mipmap-xxxhdpi-v26-ill-eula.png" alt="HJH Logo" height="40"/>
+      <h1>HJH ChatBot</h1>
+      <p class="tagline">Developed by HJH Official Team</p>
+    </div>
+
+    <div id="messages" class="messages"></div>
+
+    <div class="input">
+      <input id="userInput" type="text" placeholder="Type your message..."
+             onkeypress="if(event.key==='Enter'){sendMessage()}"/>
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  <script src="chat.js"></script>
+</body>
+        </html>
